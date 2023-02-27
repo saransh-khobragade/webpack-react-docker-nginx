@@ -30,9 +30,9 @@ module.exports = merge(common, {
   plugins: [
     new MiniCssExtractPlugin({ filename: "[fullhash].css" }),
     new CleanWebpackPlugin(),
-    new WebpackObfuscator({
-      rotateStringArray: true
-    }),
+    // new WebpackObfuscator({
+    //   rotateStringArray: true
+    // }),
     new Dotenv({
       path: '.env',
     })
