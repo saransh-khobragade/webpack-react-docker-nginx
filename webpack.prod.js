@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackObfuscator = require('webpack-obfuscator');
+const Dotenv  = require("dotenv-webpack")
 
 module.exports = merge(common, {
   mode: "production",
@@ -31,6 +32,9 @@ module.exports = merge(common, {
     new CleanWebpackPlugin(),
     new WebpackObfuscator({
       rotateStringArray: true
+    }),
+    new Dotenv({
+      path: '.env',
     })
   ],
   module: {

@@ -10,7 +10,3 @@
       * ```npm start```
    * Run this in local to start production app and open http://localhost:8080/ in browsser
       * ```npm build```
-
-## Deploy
-   * on every commit push render will pick up changes and build and deploy
-      
